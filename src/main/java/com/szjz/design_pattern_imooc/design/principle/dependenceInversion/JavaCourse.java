@@ -11,17 +11,17 @@ public class JavaCourse implements ICourse {
     /**
      * grade
      */
-    private String grade;
-
-    public JavaCourse() {
-    }
-
-    public JavaCourse(String grade) {
-        this.grade = grade;
-    }
+//    private String grade;
+//
+//    public JavaCourse() {
+//    }
+//
+//    public JavaCourse(String grade) {
+//        this.grade = grade;
+//    }
 
     @Override
     public void studyCourse() {
-        System.out.println("学习"+grade+"Java课程");
+        System.out.println("学习Java课程");
     }
 }
