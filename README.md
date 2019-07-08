@@ -17,5 +17,10 @@
 定义：不要存在多于一个导致类变更的原因  
 一个类、接口、方法只负责一项职责  
 优点：降低类的复杂度、提高类的可读性、提高系统的可维护性、降低变更引起的风险  
+* [接口隔离原则](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/principle/interfaceSegregation)  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/principle/interfaceSegregation/Package%20interfaceSegregation.png)  
+定义：用多个专门的接口，而不使用单一的总接口，客户端不应该依赖他不需要的接口。一个类对一个类的依赖应该建立在最小的接口上，建立单一接口，不需要建立庞大臃肿的接口，尽量细化接口，接口中的方法应该适度少量。  
+注意：一定要适度  
+优点： 符合我们常说的高内聚低耦合的设计思想，从而使得类具有很好的可读性，可扩展性和可维护性。  
 
 
