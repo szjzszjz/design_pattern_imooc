@@ -24,8 +24,8 @@
 * 4、[接口隔离原则](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/principle/interfaceSegregation)  
 定义：用多个专门的接口，而不使用单一的总接口，客户端不应该依赖他不需要的接口。一个类对一个类的依赖应该建立在最小的接口上，建立单一接口，不需要建立庞大臃肿的接口，尽量细化接口，接口中的方法应该适度少量。  
 注意：一定要适度  
-优点： 符合我们常说的高内聚低耦合的设计思想，从而使得类具有很好的可读性，可扩展性和可维护性。  
-![UML](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/principle/interfaceSegregation/Package%20interfaceSegregation.png)  
+优点： 符合我们常说的高内聚低耦合的设计思想，从而使得类具有很好的可读性，可扩展性和可维护性  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/principle/interfaceSegregation/Package%20interfaceSegregation.png)  
 
 * 5、[迪米特原则](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/principle/interfaceSegregation)  
 定义：一个对象应该对其他的对象保持最少的了解，又叫最少知道原则。  
@@ -33,11 +33,11 @@
 优点：降低类之间的耦合  
 强调只和朋友交流，不和陌生人说话  
 朋友：出现在成员变量，方法的输入，输出参数中的类称为成员朋友类，而出现在方法体内部的类不属于朋友类。  
-![UML](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/principle/interfaceSegregation/Package%20interfaceSegregation.png)  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/principle/interfaceSegregation/Package%20interfaceSegregation.png)  
 
 #### 二、设计模式  
 * 1、[简单工厂（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/simpleFactory)  
-![UML](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/simpleFactory/Package%20simpleFactory.png)  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/simpleFactory/Package%20simpleFactory.png)  
 
 * 2、[工厂方法（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/factoryMethod)  
 针对的是产品等级  
@@ -55,7 +55,7 @@
 缺点：  
 类的个数容易过多，增加复杂度  
 增加了系统的抽象性和理解难度  
-![UML](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/factoryMethod/Package%20factoryMethod.png)  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/factoryMethod/Package%20factoryMethod.png)  
 
 * 3、[抽象工厂（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory)  
 针对的是产品族  
@@ -71,6 +71,6 @@
 缺点：  
 规定了所有可能被创建的产品集合，产品族中扩展新的产品困难，需要修改抽象工厂接口  
 增加了系统的抽象度和理解难度  
-![UML](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory/Package%20abstractFactory.png)
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory/Package%20abstractFactory.png)
 
 
