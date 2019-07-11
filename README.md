@@ -60,11 +60,11 @@
 * 3、[抽象工厂（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory)  
 针对的是产品族  
 类型：创建型  
-定义：抽象工厂模式提供一个创建一系列相关或相互依赖对象的接口，无需指定他们的类。  
+定义：抽象工厂模式提供一个创建一系列相关或相互依赖对象的接口，无需指定他们的类  
 适用场景：  
 客户端不依赖于产品类实例如何被创建，实现等细节。  
 强调一系列相关的产品对象（属于同一产品族）一起使用创建对象需要大量重复的代码  
-提供一个产品类的库，所有的产品以同样的接口出现，从而使客户端不依赖于具体的实现。  
+提供一个产品类的库，所有的产品以同样的接口出现，从而使客户端不依赖于具体的实现  
 优点：  
 具体产品在应用层代码隔离，无需关心创建细节。  
 将一个系列的产品族统一到一起创建。  
@@ -73,4 +73,42 @@
 增加了系统的抽象度和理解难度  
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory/Package%20abstractFactory.png)
 
+* 4、[建造者（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder)  
+[建造者V2升级版（链式调用）（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/V2)  
+类型：创建型  
+定义：讲一个复杂对象的构建与它的表示分离，市的同样的构建过程可以创建不同的表示 ，用户只需要指定需要构建的类型就可以得到它们，建造过程及细节不要知道  
+适用场景：  
+如果一个对象有非常复杂的内部结构（很多属性）  
+想法复杂对象的创建和使用分离  
+优点：  
+封装性好，创建和使用分离  
+扩展性好，建造类之间独立，一点程度上解耦  
+缺点：  
+产生多余的builder对象  
+产品内部发生变化，建造者都要修改，成本较大  
+建造者和工厂模式的区别：  
+建造者更注重创建产品的顺序，当对象内部复杂时适合使用  
+工厂注重于创建产品，当创建简单产品时适合使用    
+[创建者](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/Package%20builder.png)
+[建造者V2升级版](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/V2/Package%20V2.png)
+
+* 5、[单例（懒汉式）（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/lazy)  
+类型：创建型  
+定义：保证一个类仅有一个实例，并提供一个全局的访问点  
+适用场景：想确保任何情况下都绝对只有一个实例  
+优点：  
+在内存里只有一个实例，减少了内存开销  
+可以避免对资源的多重占用  
+设置全局访问点，严格控制访问  
+缺点：没有接口，扩展困难  
+重点：  
+私有构造器  
+线程安全  
+延迟加载  
+序列化和反序列化安全  
+反射  
+实用技能：  
+反编译  
+内存原理  
+多线程debug  
 
