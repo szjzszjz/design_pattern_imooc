@@ -89,25 +89,27 @@
 建造者和工厂模式的区别：  
 建造者更注重创建产品的顺序，当对象内部复杂时适合使用  
 工厂注重于创建产品，当创建简单产品时适合使用    
-[创建者](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/Package%20builder.png)
-[建造者V2升级版](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/V2/Package%20V2.png)
+`创建者`  
+![创建者](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/Package%20builder.png)  
+`建造者V2升级版`  
+![建造者V2升级版](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/V2/Package%20V2.png)
 
 * 5、[单例（懒汉式）（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/lazy)  
-类型：创建型  
-定义：保证一个类仅有一个实例，并提供一个全局的访问点  
-适用场景：想确保任何情况下都绝对只有一个实例  
-优点：  
+`类型：`创建型  
+`定义：`保证一个类仅有一个实例，并提供一个全局的访问点  
+`适用场景：`想确保任何情况下都绝对只有一个实例  
+`优点：`  
 在内存里只有一个实例，减少了内存开销  
 可以避免对资源的多重占用  
 设置全局访问点，严格控制访问  
-缺点：没有接口，扩展困难  
-重点：  
+`缺点：`没有接口，扩展困难  
+`重点：`  
 私有构造器  
 线程安全  
 延迟加载  
 序列化和反序列化安全  
 反射  
-实用技能：  
+`实用技能：`  
 反编译  
 内存原理  
 多线程debug  
