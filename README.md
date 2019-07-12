@@ -119,7 +119,7 @@
 内存原理  
 多线程debug  
 ***
-* 6、[原型模式(创建型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory)  
+* 6、[原型模式(创建型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/prototype)  
 `类型：`创建型   
 `定义：`原型实例指定创建的对象的实例，并通过拷贝这些原型创建新的对象，不需要知道任何的创建细节，不调用构造函数。  
 `适用场景：`   
