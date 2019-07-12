@@ -73,8 +73,9 @@
 增加了系统的抽象度和理解难度  
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory/Package%20abstractFactory.png)
 
-* 4、[建造者（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder)  
-[建造者V2升级版（链式调用）（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/V2)  
+* 4、建造者（创建型）  
+[普通式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder)  
+[建造者V2升级版（链式调用）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/V2)  
 类型：创建型  
 定义：讲一个复杂对象的构建与它的表示分离，市的同样的构建过程可以创建不同的表示 ，用户只需要指定需要构建的类型就可以得到它们，建造过程及细节不要知道  
 适用场景：  
@@ -92,7 +93,11 @@
 [创建者](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/Package%20builder.png)
 [建造者V2升级版](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/V2/Package%20V2.png)
 
-* 5、[单例（懒汉式）（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/lazy)  
+* 5、单例（创建型）  
+[懒汉式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/lazy)  
+[饿汉式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/hungary)  
+[枚举式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/enumSingleton)  
+[线程式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/threadLocalSingleton)  
 类型：创建型  
 定义：保证一个类仅有一个实例，并提供一个全局的访问点  
 适用场景：想确保任何情况下都绝对只有一个实例  
@@ -111,4 +116,22 @@
 反编译  
 内存原理  
 多线程debug  
+***
+* 6、[原型模式(创建型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory)  
+`类型：`创建型   
+`定义：`原型实例指定创建的对象的实例，并通过拷贝这些原型创建新的对象，不需要知道任何的创建细节，不调用构造函数。  
+`适用场景：`   
+类初始化消耗较多资源  
+new产生一个对象需要非常繁琐的过程（数据准备，访问权限等）  
+构造函数比较复杂  
+循环体中生产大量对象时  
+`优点：`  
+原型模式性能比直接new一个对象性能要高  
+简化创建过程  
+`缺点：`  
+必须配备克隆方法  
+对克隆复杂对象和克隆出的对象进行复杂改造时，容易引入风险  
+深拷贝，浅拷贝要运用得当  
+`原型-扩展`  深克隆，浅克隆  
+
 

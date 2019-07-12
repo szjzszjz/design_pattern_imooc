@@ -20,8 +20,19 @@ public class LazyDoubleCheckSingleton {
 
     private volatile static LazyDoubleCheckSingleton lazySingleton = null;
 
+    //通过设置标记抵御反射攻击  但是通过反射可以修改属性的值 结果依然失败
+//    private Boolean flag = true;
+
     //构造器私有化 防止外部new 对象
     private LazyDoubleCheckSingleton() {
+//        if (flag){
+//            flag = false;
+//        }else {
+//            throw new RuntimeException("懒汉式抵御反射攻击");
+//        }
+        if (lazySingleton != null) {
+            throw new RuntimeException("懒汉式抵御反射攻击");
+        }
 
     }
 
@@ -39,4 +50,7 @@ public class LazyDoubleCheckSingleton {
         }
         return lazySingleton;
     }
+
+
+
 }
