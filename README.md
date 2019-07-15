@@ -36,10 +36,10 @@
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/principle/interfaceSegregation/Package%20interfaceSegregation.png)  
 
 #### 二、设计模式  
-* 1、[简单工厂（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/simpleFactory)  
+* 1、[简单工厂模式（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/simpleFactory)  
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/simpleFactory/Package%20simpleFactory.png)  
-
-* 2、[工厂方法（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/factoryMethod)  
+***
+* 2、[工厂方法模式（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/factoryMethod)  
 针对的是产品等级  
 `类型：`创建型  
 `定义：`  
@@ -56,8 +56,8 @@
 类的个数容易过多，增加复杂度  
 增加了系统的抽象性和理解难度  
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/factoryMethod/Package%20factoryMethod.png)  
-
-* 3、[抽象工厂（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory)  
+***
+* 3、[抽象工厂模式（创建型）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory)  
 针对的是产品族  
 `类型：`创建型  
 `定义：`抽象工厂模式提供一个创建一系列相关或相互依赖对象的接口，无需指定他们的类  
@@ -72,13 +72,13 @@
 规定了所有可能被创建的产品集合，产品族中扩展新的产品困难，需要修改抽象工厂接口  
 增加了系统的抽象度和理解难度  
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/abstractFactory/Package%20abstractFactory.png)
-
-* 4、建造者（创建型）  
+***
+* 4、建造者模式（创建型）  
 [普通式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder)  
 [建造者V2升级版（链式调用）](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/V2)  
-类型：创建型  
-定义：讲一个复杂对象的构建与它的表示分离，市的同样的构建过程可以创建不同的表示 ，用户只需要指定需要构建的类型就可以得到它们，建造过程及细节不要知道  
-适用场景：  
+`类型：`创建型  
+`定义：`讲一个复杂对象的构建与它的表示分离，市的同样的构建过程可以创建不同的表示 ，用户只需要指定需要构建的类型就可以得到它们，建造过程及细节不要知道  
+`适用场景：`  
 如果一个对象有非常复杂的内部结构（很多属性）  
 想法复杂对象的创建和使用分离  
 `优点：`  
@@ -94,16 +94,16 @@
 ![创建者](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/Package%20builder.png)  
 `建造者V2升级版`  
 ![建造者V2升级版](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/builder/V2/Package%20V2.png)
-
-* 5、单例（创建型）  
+***
+* 5、单例模式（创建型）  
 [懒汉式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/lazy)  
 [饿汉式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/hungary)  
 [枚举式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/enumSingleton)  
 [线程式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/creational/singleton/threadLocalSingleton)  
-类型：创建型  
-定义：保证一个类仅有一个实例，并提供一个全局的访问点  
-适用场景：想确保任何情况下都绝对只有一个实例  
-优点：  
+`类型：`创建型  
+`定义：`保证一个类仅有一个实例，并提供一个全局的访问点  
+`适用场景：`想确保任何情况下都绝对只有一个实例  
+`优点：`  
 在内存里只有一个实例，减少了内存开销  
 可以避免对资源的多重占用  
 设置全局访问点，严格控制访问  
@@ -135,5 +135,49 @@ new产生一个对象需要非常繁琐的过程（数据准备，访问权限�
 对克隆复杂对象和克隆出的对象进行复杂改造时，容易引入风险  
 深拷贝，浅拷贝要运用得当  
 `原型-扩展`  深克隆，浅克隆  
+***
+* 7、[外观模式=门面模式(结构型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/facade)  
+`类型：`结构型   
+`定义：`又叫门面模式，提供了一个统一的接口，用来访问子系统中的一群接口。外观模式定义了一个高层接口，让子系统更容易使用。
+`适用场景：`
+子系统越来越复杂，增加外观模式提供简单调用接口  
+构建多层系统结构，利用外观对象作为每层的入口，简化层间调用     
+`优点：`  
+简化了调用过程，无需深入了解子系统，防止带来风险  
+减少系统依赖，松散耦合  
+更好的划分访问层次  
+符合迪米特法则，即最少知道原则  
+`缺点：`  
+增加子系统，扩展子系统时容易引入风险  
+不符合开闭原则  
+`相关设计模式：`  
+中介者模式  单例模式  抽象工厂模式  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/facade/Package%20facade.png)
+***
+* 9、适配器模式(结构型)  
+[类适配器模式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/adapter/classAdapter)  
+[对象适配器模式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/adapter/objectAdapter)  
+`类型：`结构型   
+`定义：`将一个类的接口转换成客户期望的另一个接口，使原本接口不兼容的类可以一起工作  
+`适用场景：`
+已经存在的类，它的方法和需求不匹配时（方法结果相同或者相似）  
+不是软件设计阶段考虑的设计模式，是随着软件维护，由于不同产品，不同厂家造成功能类似而接口不相同的情况下的解决方案  
+`优点：`  
+能提高类的透明度和复用，现有的类复用单不需要改变  
+目标类和适配器类解耦，提高程序扩展性  
+符合开闭原则  
+`缺点：`  
+适配器编写过程需要全面考虑，可能会增加系统的复杂度  
+增加系统代码的刻度难度  
+`扩展：`  
+对象适配器  
+类适配器  
+`相关设计模式：`  
+适配器模式和外观模式  
+都是对现有的类现存系统的封装，外观定义了一个新的接口，提供更为方便的访问入口。适配器是复用一个原有的接口，使已有的两个接口协同工作  
+类适配器模式UML  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/adapter/classAdapter/Package%20classAdapter.png)  
+对象适配器模式UML  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/adapter/objectAdapter/Package%20objectAdapter.png)  
 
 
