@@ -197,7 +197,7 @@ new产生一个对象需要非常繁琐的过程（数据准备，访问权限�
 外部状态：在享元对象外部，随着环境改变而改变的不可共享部分  
 `相关设计模式：`  
 单例模式  代理模式  
-![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/adapter/classAdapter/Package%20classAdapter.png)  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/flyweight/Package%20flyweight.png)  
 ***
 * 10、[组合模式(结构型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/composite)  
 `类型：`结构型   
