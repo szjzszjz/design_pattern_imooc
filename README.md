@@ -240,5 +240,45 @@ new产生一个对象需要非常繁琐的过程（数据准备，访问权限�
 组合模式：注重不同级别的组合
 适配器模式：可以把功能上相似，但是接口不同的类适配起来  
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/bridge/Package%20bridge.png)  
+***
+* 11、代理模式  
+[静态代理模式(结构型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/proxy/staticProxy)  
+[动态代理模式(结构型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/proxy/dynamicProxy)  
+`类型：`结构型   
+`定义：`  
+为其他对象提供一种代理，以控制对这个对象的访问  
+代理对象在客户端对象和目标对象之间起到中介的作用  
+`适用场景：`  
+保护目标对象  
+增强目标对象  
+`优点：`  
+代理对象能将代理对象与真是被调用的目标对象分离  
+一定程度上降低了系统的耦合度，扩展性好  
+保护目标对象  
+增强目标对象  
+`缺点：`  
+代理模式会造成系统设计中类的数目的增加  
+在客户端和目标对象增加一个代理对象，会造成请求处理速度变慢  
+增加系统复杂度  
+`扩展：`  
+静态代理  
+动态代理  
+CGLib动态代理  
+`spring 代理选择扩展`  
+当bean有实现接口时， spring就会用JDK的动态代理  
+当Bean没有实现接口时，spring使用CGLib  
+可以强制使用CGLib  
+在spring配置中加入<aop:aspectj-autoproxy proxy-target-class="true"/>  
+`代理速度对比`  
+在万次运行下 jdk7以上的动态代理要比CGLib快大约20%  
+`相关设计模式：`  
+装饰者模式：为对象添加行为  
+适配器模式：改变代理类的接口  
+静态代理UML  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/proxy/staticProxy/Package%20staticproxy.png)  
+动态代理UML    
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/proxy/dynamicProxy/Package%20dynamicproxy.png)  
+
+  
 
 

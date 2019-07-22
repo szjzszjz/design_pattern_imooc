@@ -4,7 +4,7 @@ package com.szjz.design_pattern_imooc.design.structural.bridge;
  * author:szjz
  * date:2019/7/16
  */
-public class ABCBank extends Bank{
+public class ABCBank extends Bank {
 
     public ABCBank(Account account) {
         super(account);

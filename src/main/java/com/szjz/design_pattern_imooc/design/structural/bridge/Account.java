@@ -7,6 +7,7 @@ package com.szjz.design_pattern_imooc.design.structural.bridge;
 public interface Account {
 
     Account openAccount();
+
     void showAccountType();
 
 }

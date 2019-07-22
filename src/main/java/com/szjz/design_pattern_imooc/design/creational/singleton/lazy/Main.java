@@ -31,6 +31,6 @@ public class Main {
 
         System.out.println(instance);
         System.out.println(newInstance);
-        System.out.println(instance== newInstance);
+        System.out.println(instance == newInstance);
     }
 }

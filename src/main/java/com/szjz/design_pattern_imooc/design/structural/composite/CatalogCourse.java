@@ -21,7 +21,7 @@ public class CatalogCourse extends CatalogComponent {
 
     List<CatalogComponent> items = new ArrayList<>();
 
-    public CatalogCourse(String name,Integer level) {
+    public CatalogCourse(String name, Integer level) {
         this.name = name;
         this.level = level;
     }

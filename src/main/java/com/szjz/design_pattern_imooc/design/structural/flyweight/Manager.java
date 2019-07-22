@@ -7,21 +7,29 @@ package com.szjz.design_pattern_imooc.design.structural.flyweight;
  */
 public class Manager implements Employee {
 
-    /**内部状态 title */
+    /**
+     * 内部状态 title
+     */
     private String title = "2018年度总结大会";
 
-    /** reportContent */
+    /**
+     * reportContent
+     */
     private String reportContent;
-    
-    /**外部状态 department */
+
+    /**
+     * 外部状态 department
+     */
     private String department;
 
-    /**外部状态 name */
+    /**
+     * 外部状态 name
+     */
     private String name;
-    
+
     @Override
     public void report() {
-        System.out.println(name+"的汇报标题："+title+"   内容:"+reportContent);
+        System.out.println(name + "的汇报标题：" + title + "   内容:" + reportContent);
     }
 
     public Manager(String department) {

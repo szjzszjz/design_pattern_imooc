@@ -6,7 +6,7 @@ import org.omg.CORBA.NO_PERMISSION;
  * author:szjz
  * date:2019/7/8
  */
-public class Duck implements IEatInterface,IFlyInterface, ISwimInterface {
+public class Duck implements IEatInterface, IFlyInterface, ISwimInterface {
     @Override
     public void eat() {
         System.out.println("吃");

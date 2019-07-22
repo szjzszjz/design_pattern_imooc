@@ -8,6 +8,6 @@ package com.szjz.design_pattern_imooc.design.principle.singleResponsibility;
  */
 
 
-public interface ICourse extends ICourseContent,ICourseManager,ICourseIntegral{
+public interface ICourse extends ICourseContent, ICourseManager, ICourseIntegral {
 
 }

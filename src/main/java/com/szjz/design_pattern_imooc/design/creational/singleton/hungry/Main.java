@@ -31,7 +31,6 @@ public class Main {
         System.out.println(instance == newInstance);*/
 
 
-
         //测试饿汉式抵御反射攻击
         //因为饿汉式的实例是在类初始化的时候创建的 所有在私有构造器内部加判断即可抵御反射攻击
         HungarySingleton instance1 = HungarySingleton.getInstance();

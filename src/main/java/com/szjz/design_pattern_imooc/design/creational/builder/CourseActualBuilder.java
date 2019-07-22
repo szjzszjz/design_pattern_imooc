@@ -8,6 +8,7 @@ package com.szjz.design_pattern_imooc.design.creational.builder;
 public class CourseActualBuilder extends CourseBuilder {
 
     private Course course = new Course();
+
     @Override
     public void buildName(String name) {
         this.course.setName(name);
@@ -34,7 +35,7 @@ public class CourseActualBuilder extends CourseBuilder {
     }
 
     @Override
-    public Course makeCourse(){
+    public Course makeCourse() {
         return this.course;
     }
 }

@@ -6,5 +6,5 @@ package com.szjz.design_pattern_imooc.design.structural.adapter.objectAdapter;
  */
 public interface Target {
 
-     void request();
+    void request();
 }

@@ -3,7 +3,7 @@ package com.szjz.design_pattern_imooc.design.structural.flyweight;
 /**
  * author:szjz
  * date:2019/7/16
- *
+ * <p>
  * 享元模式：创建多个重复使用的对象，放入池子中，以便重复使用
  */
 public class Main {
@@ -29,7 +29,7 @@ public class Main {
         Integer c = Integer.valueOf(1000);
         Integer d = 1000;
 
-        System.out.println(a==b);
-        System.out.println(c==d);
+        System.out.println(a == b);
+        System.out.println(c == d);
     }
 }

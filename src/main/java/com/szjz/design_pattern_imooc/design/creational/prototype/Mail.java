@@ -10,13 +10,19 @@ import lombok.Data;
 
 @Data
 public class Mail implements Cloneable {
-    /** name */
+    /**
+     * name
+     */
     private String name;
-    
-    /** emailAddress */
+
+    /**
+     * emailAddress
+     */
     private String emailAddress;
-    
-    /** content */
+
+    /**
+     * content
+     */
     private String content;
 
 
@@ -30,12 +36,12 @@ public class Mail implements Cloneable {
                 "name='" + name + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
                 ", content='" + content + '\'' +
-                '}'+ super.toString();
+                '}' + super.toString();
     }
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        System.out.println("clone mail object" );
+        System.out.println("clone mail object");
         return super.clone();
     }
 }

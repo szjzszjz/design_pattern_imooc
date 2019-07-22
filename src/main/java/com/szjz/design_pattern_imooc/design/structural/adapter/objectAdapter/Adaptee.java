@@ -6,7 +6,7 @@ package com.szjz.design_pattern_imooc.design.structural.adapter.objectAdapter;
  */
 public class Adaptee {
 
-    public void adapteeRequest(){
+    public void adapteeRequest() {
         System.out.println("组合 被适配者的方法");
     }
 }

@@ -45,7 +45,9 @@ public class Course {
     }
 
 
-    /** 静态内部类 */
+    /**
+     * 静态内部类
+     */
     public static class CourseBuilder {
         /**
          * name
@@ -73,29 +75,33 @@ public class Course {
         private String QA;
 
         //创建链式调用
-        public CourseBuilder buildName(String name){
+        public CourseBuilder buildName(String name) {
             this.name = name;
             return this;
         }
-        public CourseBuilder buildPPT(String PPT){
+
+        public CourseBuilder buildPPT(String PPT) {
             this.PPT = PPT;
             return this;
         }
-        public CourseBuilder buildVideo(String video){
+
+        public CourseBuilder buildVideo(String video) {
             this.video = video;
             return this;
         }
-        public CourseBuilder buildArticle(String article){
+
+        public CourseBuilder buildArticle(String article) {
             this.article = article;
             return this;
         }
-        public CourseBuilder buildQA(String QA){
+
+        public CourseBuilder buildQA(String QA) {
             this.QA = QA;
             return this;
         }
 
         //最终创建课程
-        public Course build(){
+        public Course build() {
             return new Course(this);
         }
 

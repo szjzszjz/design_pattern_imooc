@@ -10,15 +10,19 @@ import java.util.Date;
  */
 
 @Data
-public class Pig implements Cloneable{
-    
-    /** name */
+public class Pig implements Cloneable {
+
+    /**
+     * name
+     */
     private String name;
-    
-    /** birthday */
+
+    /**
+     * birthday
+     */
     private Date birthday;
 
-    
+
     public Pig(String name, Date birthday) {
         System.out.println("construct pig object");
         this.name = name;
@@ -30,7 +34,7 @@ public class Pig implements Cloneable{
         return "Pig{" +
                 "name='" + name + '\'' +
                 ", birthday=" + birthday +
-                '}'+ super.toString();
+                '}' + super.toString();
     }
 
     @Override

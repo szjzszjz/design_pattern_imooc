@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public class CourseImpl implements ICourseContent, ICourseManager, ICourseIntegral,ICourse {
+public class CourseImpl implements ICourseContent, ICourseManager, ICourseIntegral, ICourse {
     @Override
     public String getCourseName() {
         return "课程名称";

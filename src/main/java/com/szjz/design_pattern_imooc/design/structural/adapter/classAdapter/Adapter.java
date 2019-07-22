@@ -5,7 +5,7 @@ package com.szjz.design_pattern_imooc.design.structural.adapter.classAdapter;
  * date:2019/7/15
  * 类适配器
  */
-public class Adapter extends Adaptee implements Target{
+public class Adapter extends Adaptee implements Target {
 
     @Override
     public void request() {

@@ -19,7 +19,6 @@ public class JavaCourse implements ICourse {
 //    public JavaCourse(String grade) {
 //        this.grade = grade;
 //    }
-
     @Override
     public void studyCourse() {
         System.out.println("学习Java课程");

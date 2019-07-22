@@ -7,8 +7,8 @@ package com.szjz.design_pattern_imooc.design.structural.facade;
  */
 public class PointsPaymentService {
 
-    public Boolean pay(PointsGift gift){
-        System.out.println("积分支付"+gift.getName()+"成功!");
+    public Boolean pay(PointsGift gift) {
+        System.out.println("积分支付" + gift.getName() + "成功!");
         return true;
     }
 }

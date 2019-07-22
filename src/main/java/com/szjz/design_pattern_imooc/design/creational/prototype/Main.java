@@ -10,8 +10,8 @@ public class Main {
         Mail mail = new Mail();
         Mail mailTemp1 = (Mail) mail.clone();
         mail.setContent("初始化模板");
-        System.out.println("0000"+ mail);
-        System.out.println("1111"+ mailTemp1);
+        System.out.println("0000" + mail);
+        System.out.println("1111" + mailTemp1);
         long start = System.nanoTime();
         for (int i = 0; i < 10; i++) {
 

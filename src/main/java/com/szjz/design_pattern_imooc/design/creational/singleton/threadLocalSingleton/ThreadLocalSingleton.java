@@ -9,11 +9,11 @@ public class ThreadLocalSingleton {
     private static final ThreadLocal<ThreadLocalSingleton> threadLocalSingletonThreadLocal
             = ThreadLocal.withInitial(() -> new ThreadLocalSingleton());
 
-    private ThreadLocalSingleton(){
+    private ThreadLocalSingleton() {
 
     }
 
-    public static ThreadLocalSingleton getInstance(){
+    public static ThreadLocalSingleton getInstance() {
         return threadLocalSingletonThreadLocal.get();
     }
 }

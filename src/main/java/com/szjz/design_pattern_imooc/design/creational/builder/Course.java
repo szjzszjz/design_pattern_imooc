@@ -9,20 +9,30 @@ import lombok.Data;
 
 @Data
 public class Course {
-    
-    /** name */
+
+    /**
+     * name
+     */
     private String name;
-    
-    /** ppt */
+
+    /**
+     * ppt
+     */
     private String PPT;
-    
-    /** video */
+
+    /**
+     * video
+     */
     private String video;
-    
-    /** article */
+
+    /**
+     * article
+     */
     private String article;
 
-    /** question && answer */
+    /**
+     * question && answer
+     */
     private String QA;
 
 

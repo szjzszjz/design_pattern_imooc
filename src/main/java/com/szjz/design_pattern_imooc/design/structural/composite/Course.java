@@ -8,10 +8,14 @@ import com.sun.org.apache.xml.internal.resolver.Catalog;
  */
 public class Course extends CatalogComponent {
 
-    /** name */
+    /**
+     * name
+     */
     private String name;
 
-    /** price */
+    /**
+     * price
+     */
     private Double price;
 
     public Course(String name, Double price) {
@@ -20,7 +24,7 @@ public class Course extends CatalogComponent {
     }
 
     @Override
-    public String  getName(CatalogComponent catalogComponent) {
+    public String getName(CatalogComponent catalogComponent) {
         return this.name;
     }
 
@@ -31,6 +35,6 @@ public class Course extends CatalogComponent {
 
     @Override
     public void print() {
-        System.out.println("课程名称："+name+"   价格："+price);
+        System.out.println("课程名称：" + name + "   价格：" + price);
     }
 }

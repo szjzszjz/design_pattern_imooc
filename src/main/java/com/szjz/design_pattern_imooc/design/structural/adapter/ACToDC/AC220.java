@@ -7,7 +7,7 @@ package com.szjz.design_pattern_imooc.design.structural.adapter.ACToDC;
  */
 public class AC220 {
 
-    public int inputAC(){
+    public int inputAC() {
         int inputAC = 220;
         System.out.println("输入220V 交流电");
         return inputAC;

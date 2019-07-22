@@ -5,7 +5,7 @@ package com.szjz.design_pattern_imooc.design.structural.bridge;
  * date:2019/7/16
  * 活期账户
  */
-public class SavingAccount implements Account{
+public class SavingAccount implements Account {
 
     @Override
     public Account openAccount() {

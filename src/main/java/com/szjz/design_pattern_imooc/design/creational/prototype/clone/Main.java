@@ -17,8 +17,8 @@ public class Main {
         Pig clonePig = (Pig) pig.clone();
 
 
-        System.out.println("0"+pig);
-        System.out.println("1"+clonePig);
+        System.out.println("0" + pig);
+        System.out.println("1" + clonePig);
 
         //不需要重写属性克隆
 //        pig.setBirthday(new Date(66666666666666l));
@@ -28,9 +28,8 @@ public class Main {
         pig.getBirthday().setTime(66666666666666l);
         pig.setName("哈士奇");
 
-        System.out.println("0"+pig);
-        System.out.println("1"+clonePig);
-
+        System.out.println("0" + pig);
+        System.out.println("1" + clonePig);
 
 
         //测试通过反射实现克隆对单例的破坏 前提是单例类实现了Cloneable接口
@@ -39,7 +38,7 @@ public class Main {
         Class<?> aClass = Class.forName(HungarySingleton.class.getName());
         Method cloneMethod = aClass.getDeclaredMethod("clone");
         cloneMethod.setAccessible(true);
-        HungarySingleton newInstance= (HungarySingleton) cloneMethod.invoke(instance);
+        HungarySingleton newInstance = (HungarySingleton) cloneMethod.invoke(instance);
 
         System.out.println(instance);
         System.out.println(newInstance);

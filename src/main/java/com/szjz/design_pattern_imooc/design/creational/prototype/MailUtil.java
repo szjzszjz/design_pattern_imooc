@@ -8,14 +8,14 @@ import java.text.MessageFormat;
  */
 public class MailUtil {
 
-    public static void sendEmail(Mail mail){
+    public static void sendEmail(Mail mail) {
         String outputContent = "向{0}同学，邮件地址：{1},邮件内容:{2} 发送邮件 {3}";
-        String format = MessageFormat.format(outputContent, mail.getName(), mail.getEmailAddress(), mail.getContent(),mail);
+        String format = MessageFormat.format(outputContent, mail.getName(), mail.getEmailAddress(), mail.getContent(), mail);
         System.out.println(format);
     }
 
 
-    public static void saveOriginMailRecord(Mail mail){
+    public static void saveOriginMailRecord(Mail mail) {
         System.out.println("存储原始邮件记录：origin mail: " + mail.getContent());
     }
 }

@@ -6,7 +6,7 @@ package com.szjz.design_pattern_imooc.design.principle.demeter;
  */
 public class Boss {
 
-    public void commandCheckNumber(){
+    public void commandCheckNumber() {
         new TeamLeader().checkNumberOfCourses();
     }
 }

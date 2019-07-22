@@ -11,7 +11,9 @@ import lombok.Data;
 @Data
 public class PointsGift {
 
-    /** name */
+    /**
+     * name
+     */
     private String name;
 
     public PointsGift(String name) {

@@ -3,7 +3,7 @@ package com.szjz.design_pattern_imooc.design.structural.bridge;
 /**
  * author:szjz
  * date:2019/7/16
- *
+ * <p>
  * 桥接模式的本质：就是一个父类里面包含着另一个父类
  */
 public class Main {

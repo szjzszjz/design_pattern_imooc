@@ -9,15 +9,21 @@ import lombok.Getter;
  */
 
 @Data
-public class JavaCourse implements ICourse{
+public class JavaCourse implements ICourse {
 
-    /** id */
+    /**
+     * id
+     */
     private Integer id;
 
-    /** name */
+    /**
+     * name
+     */
     private String name;
 
-    /** price */
+    /**
+     * price
+     */
     private Double price;
 
     public JavaCourse(Integer id, String name, Double price) {
