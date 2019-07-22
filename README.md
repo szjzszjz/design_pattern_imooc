@@ -154,7 +154,7 @@ new产生一个对象需要非常繁琐的过程（数据准备，访问权限�
 中介者模式  单例模式  抽象工厂模式  
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/facade/Package%20facade.png)
 ***
-* 9、适配器模式(结构型)  
+* 8、适配器模式(结构型)  
 [类适配器模式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/adapter/classAdapter)  
 [对象适配器模式](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/adapter/objectAdapter)  
 `类型：`结构型   
@@ -180,7 +180,7 @@ new产生一个对象需要非常繁琐的过程（数据准备，访问权限�
 对象适配器模式UML  
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/adapter/objectAdapter/Package%20objectAdapter.png)  
 ***
-* 10、[享元模式(结构型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/flyweight)  
+* 9、[享元模式(结构型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/flyweight)  
 `类型：`结构型   
 `定义：`提供了减少对象数量从而改善应用所需的对象结构的方式。运用共享技术有效的支持大量的细粒度的对象  
 `适用场景：`  
@@ -241,7 +241,7 @@ new产生一个对象需要非常繁琐的过程（数据准备，访问权限�
 适配器模式：可以把功能上相似，但是接口不同的类适配起来  
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/bridge/Package%20bridge.png)  
 ***
-* 11、代理模式  
+* 12、代理模式  
 [静态代理模式(结构型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/proxy/staticProxy)  
 [动态代理模式(结构型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/proxy/dynamicProxy)  
 `类型：`结构型   
@@ -278,6 +278,29 @@ CGLib动态代理
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/proxy/staticProxy/Package%20staticproxy.png)  
 动态代理UML    
 ![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/structural/proxy/dynamicProxy/Package%20dynamicproxy.png)  
+***
+* 11、[模板方法模式(行为型)](https://github.com/szjzszjz/design_pattern_imooc/tree/master/src/main/java/com/szjz/design_pattern_imooc/design/behavioral/templateMethod)  
+`类型：`行为型   
+`定义：`  
+定义了一个算法骨架，并允许子类为一个或者多个步骤提供实现  
+模板方法使得子类可以在不改变算法结构的情况下，重新定义算法的某些步骤  
+`适用场景：`  
+一次性实现一个算法的不变的部分，并将可变的行为留给子类来实现  
+各子类中公共的行为被提取出来并集中到一个公共的父类中，从而避免代码重复  
+`优点：`  
+提高复用性  
+提高扩展性  
+符合开闭原则  
+`缺点：`  
+类数目增加  
+增加了系统实现的复杂度  
+继承关系自身缺点，如果父类添加新的抽象方法，所有的子类都要改一遍  
+`扩展：`钩子方法  
+`相关设计模式：`  
+工厂方法:工厂方法是模板方法的一种特殊实现  
+策略模式：都有封装算法，不同的算法可以相互替换，并且不影响客户端应用层的使用，可以改变算法流程（一般在if...else...的情况下考虑使用）  
+模板方法：定义一个算法的流程，将一些不太一样的实现步骤交给子类区实现，整体不改变算法流程  
+![UML](https://github.com/szjzszjz/design_pattern_imooc/blob/master/src/main/java/com/szjz/design_pattern_imooc/design/behavioral/templateMethod/Package%20templateMethod.png)  
 
   
 
